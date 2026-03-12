@@ -1,0 +1,5 @@
+{
+  "name": "SuperAlto Ad Designer",
+  "description": "A mobile-only splash screen designer for SuperAlto ads, featuring cover, info, and CTA screens with customizable settings.",
+  "requestFramePermissions": []
+}

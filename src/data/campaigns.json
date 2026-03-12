@@ -1,0 +1,46 @@
+[
+  {
+    "id": "bmw-in-tirana",
+    "title": "Searching for a BMW?",
+    "searchString": "BMW in Tirana between 20k and 25k",
+    "cars": [
+      { "id": 1, "title": "BMW 530 - 2007", "price": "€21,900", "km": "170,000 km", "fuel": "LPG (liquefied petroleum gas)", "transmission": "Automatic", "location": "TIRANA", "image": "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&q=80&w=800" },
+      { "id": 2, "title": "BMW X5 - 2015", "price": "€24,500", "km": "120,000 km", "fuel": "Diesel", "transmission": "Automatic", "location": "TIRANA", "image": "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&q=80&w=800" },
+      { "id": 3, "title": "BMW 320d - 2018", "price": "€22,000", "km": "95,000 km", "fuel": "Diesel", "transmission": "Automatic", "location": "TIRANA", "image": "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&q=80&w=800" },
+      { "id": 4, "title": "BMW 428i - 2016", "price": "€23,800", "km": "110,000 km", "fuel": "Petrol", "transmission": "Automatic", "location": "TIRANA", "image": "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&q=80&w=800" },
+      { "id": 5, "title": "BMW X3 - 2017", "price": "€24,900", "km": "105,000 km", "fuel": "Diesel", "transmission": "Automatic", "location": "TIRANA", "image": "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&q=80&w=800" },
+      { "id": 6, "title": "BMW 520d - 2016", "price": "€21,500", "km": "140,000 km", "fuel": "Diesel", "transmission": "Automatic", "location": "TIRANA", "image": "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&q=80&w=800" },
+      { "id": 7, "title": "BMW 118i - 2019", "price": "€20,500", "km": "60,000 km", "fuel": "Petrol", "transmission": "Automatic", "location": "TIRANA", "image": "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&q=80&w=800" },
+      { "id": 8, "title": "BMW X1 - 2018", "price": "€22,900", "km": "85,000 km", "fuel": "Diesel", "transmission": "Automatic", "location": "TIRANA", "image": "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&q=80&w=800" },
+      { "id": 9, "title": "BMW 330e - 2017", "price": "€23,500", "km": "90,000 km", "fuel": "Hybrid", "transmission": "Automatic", "location": "TIRANA", "image": "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&q=80&w=800" },
+      { "id": 10, "title": "BMW 420d - 2015", "price": "€20,900", "km": "130,000 km", "fuel": "Diesel", "transmission": "Automatic", "location": "TIRANA", "image": "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&q=80&w=800" },
+      { "id": 11, "title": "BMW 530d - 2014", "price": "€21,000", "km": "160,000 km", "fuel": "Diesel", "transmission": "Automatic", "location": "TIRANA", "image": "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&q=80&w=800" },
+      { "id": 12, "title": "BMW X4 - 2016", "price": "€24,000", "km": "115,000 km", "fuel": "Diesel", "transmission": "Automatic", "location": "TIRANA", "image": "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&q=80&w=800" },
+      { "id": 13, "title": "BMW 218d - 2018", "price": "€20,000", "km": "80,000 km", "fuel": "Diesel", "transmission": "Automatic", "location": "TIRANA", "image": "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&q=80&w=800" },
+      { "id": 14, "title": "BMW 328i - 2015", "price": "€21,800", "km": "125,000 km", "fuel": "Petrol", "transmission": "Automatic", "location": "TIRANA", "image": "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&q=80&w=800" },
+      { "id": 15, "title": "BMW 525d - 2015", "price": "€22,500", "km": "135,000 km", "fuel": "Diesel", "transmission": "Automatic", "location": "TIRANA", "image": "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&q=80&w=800" }
+    ]
+  },
+  {
+    "id": "mercedes-in-tirana",
+    "title": "Searching for a Mercedes?",
+    "searchString": "Mercedes in Tirana between 15k and 20k",
+    "cars": [
+      { "id": 1, "title": "Mercedes C220 - 2014", "price": "€16,900", "km": "180,000 km", "fuel": "Diesel", "transmission": "Automatic", "location": "TIRANA", "image": "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&q=80&w=800" },
+      { "id": 2, "title": "Mercedes E250 - 2013", "price": "€17,500", "km": "190,000 km", "fuel": "Diesel", "transmission": "Automatic", "location": "TIRANA", "image": "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&q=80&w=800" },
+      { "id": 3, "title": "Mercedes A180 - 2016", "price": "€18,000", "km": "110,000 km", "fuel": "Diesel", "transmission": "Automatic", "location": "TIRANA", "image": "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&q=80&w=800" },
+      { "id": 4, "title": "Mercedes CLA200 - 2015", "price": "€19,500", "km": "130,000 km", "fuel": "Diesel", "transmission": "Automatic", "location": "TIRANA", "image": "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&q=80&w=800" },
+      { "id": 5, "title": "Mercedes GLA200 - 2015", "price": "€19,900", "km": "125,000 km", "fuel": "Diesel", "transmission": "Automatic", "location": "TIRANA", "image": "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&q=80&w=800" },
+      { "id": 6, "title": "Mercedes C300 - 2014", "price": "€18,500", "km": "150,000 km", "fuel": "Hybrid", "transmission": "Automatic", "location": "TIRANA", "image": "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&q=80&w=800" },
+      { "id": 7, "title": "Mercedes E220 - 2014", "price": "€17,900", "km": "175,000 km", "fuel": "Diesel", "transmission": "Automatic", "location": "TIRANA", "image": "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&q=80&w=800" },
+      { "id": 8, "title": "Mercedes B180 - 2017", "price": "€16,500", "km": "95,000 km", "fuel": "Diesel", "transmission": "Automatic", "location": "TIRANA", "image": "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&q=80&w=800" },
+      { "id": 9, "title": "Mercedes C250 - 2013", "price": "€15,900", "km": "185,000 km", "fuel": "Diesel", "transmission": "Automatic", "location": "TIRANA", "image": "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&q=80&w=800" },
+      { "id": 10, "title": "Mercedes GLK220 - 2013", "price": "€17,000", "km": "160,000 km", "fuel": "Diesel", "transmission": "Automatic", "location": "TIRANA", "image": "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&q=80&w=800" },
+      { "id": 11, "title": "Mercedes A200 - 2015", "price": "€18,900", "km": "120,000 km", "fuel": "Diesel", "transmission": "Automatic", "location": "TIRANA", "image": "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&q=80&w=800" },
+      { "id": 12, "title": "Mercedes E350 - 2012", "price": "€16,000", "km": "200,000 km", "fuel": "Diesel", "transmission": "Automatic", "location": "TIRANA", "image": "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&q=80&w=800" },
+      { "id": 13, "title": "Mercedes C200 - 2015", "price": "€19,000", "km": "140,000 km", "fuel": "Petrol", "transmission": "Automatic", "location": "TIRANA", "image": "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&q=80&w=800" },
+      { "id": 14, "title": "Mercedes CLA250 - 2014", "price": "€19,800", "km": "135,000 km", "fuel": "Petrol", "transmission": "Automatic", "location": "TIRANA", "image": "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&q=80&w=800" },
+      { "id": 15, "title": "Mercedes ML350 - 2011", "price": "€15,500", "km": "220,000 km", "fuel": "Diesel", "transmission": "Automatic", "location": "TIRANA", "image": "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&q=80&w=800" }
+    ]
+  }
+]
