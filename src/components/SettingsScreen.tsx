@@ -132,6 +132,7 @@ export default function SettingsScreen() {
           if (makes.length > 0 && !makes.some(m => car._make === m.toLowerCase())) return false;
           if (models.length > 0 && !models.some(m => car._model.includes(m.toLowerCase()))) return false;
           if (location && !car._location.includes(location.toLowerCase())) return false;
+          if ((minPrice != null || maxPrice != null) && car._priceNum === 0) return false;
           if (minPrice != null && car._priceNum < minPrice) return false;
           if (maxPrice != null && car._priceNum > maxPrice) return false;
           if (fuelType && !car._fuel.includes(fuelType.toLowerCase())) return false;
@@ -147,7 +148,8 @@ export default function SettingsScreen() {
           }
           return true;
         })
-        // Sort by price ascending
+        // Sort by price ascending, keep only cars with images
+        .filter((car: any) => car.image)
         .sort((a: any, b: any) => a._priceNum - b._priceNum)
         .slice(0, settings.carsToShow)
         .map(({ _priceNum, _make, _model, _location, _fuel, _transmission, _color, _title, ...car }: any) => car as Car);
