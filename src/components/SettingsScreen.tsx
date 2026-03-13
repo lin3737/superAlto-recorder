@@ -48,6 +48,26 @@ export default function SettingsScreen() {
       const fuelType: string = filters?.fuelType ?? '';
       const transmission: string = filters?.transmission ?? '';
 
+      // Color filter — n8n may return it, or we detect from the raw query
+      const albanianColorMap: Record<string, string> = {
+        'i zi': 'black', 'e zeze': 'black', 'e zezë': 'black', 'i zeze': 'black',
+        'i bardhe': 'white', 'e bardhe': 'white', 'i bardhë': 'white', 'e bardhë': 'white',
+        'i kuq': 'red', 'e kuqe': 'red',
+        'i kalter': 'blue', 'e kalter': 'blue', 'i kaltër': 'blue', 'e kaltër': 'blue',
+        'i gjelber': 'green', 'e gjelber': 'green', 'i gjelbër': 'green', 'e gjelbër': 'green',
+        'gri': 'gray', 'grigio': 'gray',
+        'i verdhe': 'yellow', 'e verdhe': 'yellow', 'i verdhë': 'yellow', 'e verdhë': 'yellow',
+        'portokalli': 'orange', 'kafe': 'brown', 'vjollce': 'purple', 'vjollcë': 'purple',
+      };
+      let color: string = filters?.color || filters?.colour || '';
+      if (!color) {
+        const q = searchQuery.trim().toLowerCase();
+        for (const [alb, eng] of Object.entries(albanianColorMap)) {
+          if (q.includes(alb)) { color = eng; break; }
+        }
+      }
+      color = color.toLowerCase();
+
       // Strategy: if makes are specified, query Firestore by make directly so we get
       // ALL matching docs instead of a random slice of 16k+ documents.
       // The collection has two schema variants: some docs use "make", others use "Make".
@@ -86,6 +106,7 @@ export default function SettingsScreen() {
           const kmStr = kmRaw != null
             ? `${Number(String(kmRaw).replace(/[^0-9]/g, '')).toLocaleString()} km`
             : '—';
+          const colorName = (d.color || d.colour || d.Color || d.Colour || d.exteriorColor || d.exterior_color || '').trim();
           return {
             id: doc.id,
             title,
@@ -102,6 +123,8 @@ export default function SettingsScreen() {
             _location: locationName.toLowerCase(),
             _fuel: fuelName.toLowerCase(),
             _transmission: (d.transmission || d.gearbox || '').toLowerCase(),
+            _color: colorName.toLowerCase(),
+            _title: title.toLowerCase(),
           };
         })
         // Client-side filters
@@ -113,12 +136,21 @@ export default function SettingsScreen() {
           if (maxPrice != null && car._priceNum > maxPrice) return false;
           if (fuelType && !car._fuel.includes(fuelType.toLowerCase())) return false;
           if (transmission && !car._transmission.includes(transmission.toLowerCase())) return false;
+          if (color) {
+            // Build synonyms: English name + all Albanian words that map to this color
+            const colorSynonyms = [color, ...Object.entries(albanianColorMap)
+              .filter(([, eng]) => eng === color)
+              .map(([alb]) => alb)];
+            // Check the dedicated color field first, then fall back to the title
+            const colorMatches = (str: string) => colorSynonyms.some(s => str.includes(s));
+            if (!colorMatches(car._color) && !colorMatches(car._title)) return false;
+          }
           return true;
         })
         // Sort by price ascending
         .sort((a: any, b: any) => a._priceNum - b._priceNum)
         .slice(0, settings.carsToShow)
-        .map(({ _priceNum, _make, _model, _location, _fuel, _transmission, ...car }: any) => car as Car);
+        .map(({ _priceNum, _make, _model, _location, _fuel, _transmission, _color, _title, ...car }: any) => car as Car);
 
       const label = filters?.searchQuery || searchQuery.trim();
 
